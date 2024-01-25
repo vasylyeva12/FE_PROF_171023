@@ -11,6 +11,7 @@
     background-color: #f44336; 
     display: flex;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); 
+    z-index: 0;
     position: fixed;  
     top: 0;  
     width: 100%;   
@@ -125,9 +126,9 @@ main section:nth-child(2n + 2) .post{
 
 .grey-page{
     text-align: center;
-    background-color: black;
+    background-color: #666666;
     padding: 64px 16px;
-    opacity: 0.60;
+    
 }
 
 .grey-page p{
@@ -142,28 +143,33 @@ footer{
     text-align: center;
     padding: 64px 0;
 }
-.footer-icon{
+.footer-icon ul{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 5px;
-    margin: 0 auto;
-    opacity: 0.60;
+    margin: 0 auto;    
+    
     padding: 64px 16px;
     font-size: 24px;
+    list-style: none;
+}
+
+ul i{
+    color: #666666;
 }
 
 footer p {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    opacity: 0.60;
+    color: #666666;
 }
 
 footer a{
     font-family: 'Lato', sans-serif;
-    outline: none;
-    /* text-decoration: black; */
+    outline: none;    
     padding: 2px 1px 0;
     cursor: pointer;
     background-color: transparent;
-    color: #000000;
+    color: #666666;
 }

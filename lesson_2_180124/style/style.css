@@ -9,15 +9,12 @@
 
 nav {
     background-color: #f44336; 
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); 
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index: 1; 
     position: fixed;  
     top: 0;  
-    width: 100%;
-    /* display: flex;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); 
-    position: fixed;  
-    top: 0;  
-    width: 100%;    */
+    width: 100%;   
+    
 }
 nav ul{
     list-style: none;
@@ -27,7 +24,7 @@ nav ul{
 nav ul li a{
     display: block;
     padding: 12px 16px;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #fff;
     font-size: 18px;
 }
@@ -39,20 +36,6 @@ nav ul li a:first-child{
     background-color: #fff;
     color: #000000;
 }
-
-/* .navbar > a{
-    padding: 12px 24px;
-    font-size: 18px;
-    color: #ffffff;
-} */
-/* .navbar > a:hover{    
-    color: #000000;
-    background-color: #fff;
-} */
-/* .navbar > a:first-child{    
-    color: #000000;
-    background-color: #fff;
-} */
 
 .header{
     background-color: #f44336;
@@ -138,20 +121,14 @@ main section:nth-child(2n + 2) .post{
     color:#f44336;   
     font-size: 200px;    
 }
-
-/* .flex-reverse{
-    flex-direction: row-reverse;
-} */
-
 .bg-gray{
     background-color: #f1f1f1;
 }
 
 .grey-page{
     text-align: center;
-    background-color: black;
-    padding: 64px 16px;
-    opacity: 0.60;
+    background-color: #666666;
+    padding: 64px 16px;    
 }
 
 .grey-page p{
@@ -166,20 +143,26 @@ footer{
     text-align: center;
     padding: 64px 0;
 }
-.footer-icon{
+.footer-icon ul{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 5px;
-    margin: 0 auto;
-    opacity: 0.60;
+    margin: 0 auto;    
+    
     padding: 64px 16px;
     font-size: 24px;
+    list-style: none;
+}
+
+ul i{
+    color: #666666;
 }
 
 footer p {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    opacity: 0.60;
+    color: #666666;
 }
 
 footer a{
@@ -188,6 +171,6 @@ footer a{
     padding: 2px 1px 0;
     cursor: pointer;
     background-color: transparent;
-    color: #000000;
+    color: #666666;
 }
 
