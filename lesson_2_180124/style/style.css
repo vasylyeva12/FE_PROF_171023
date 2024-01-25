@@ -7,49 +7,73 @@
     line-height: 1.5;
 }
 
-.header_section {
+nav {
     background-color: #f44336; 
-    display: flex;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); 
     position: fixed;  
     top: 0;  
-    width: 100%;   
+    width: 100%;
+    /* display: flex;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); 
+    position: fixed;  
+    top: 0;  
+    width: 100%;    */
+}
+nav ul{
+    list-style: none;
+    display: flex;
 }
 
-.header_section > a{
+nav ul li a{
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #000000;
+}
+nav ul li a:first-child{
+    background-color: #fff;
+    color: #000000;
+}
+
+/* .navbar > a{
     padding: 12px 24px;
     font-size: 18px;
     color: #ffffff;
-}
-.header_section > a:hover{    
+} */
+/* .navbar > a:hover{    
     color: #000000;
     background-color: #fff;
-}
-.header_section > a:first-child{    
+} */
+/* .navbar > a:first-child{    
     color: #000000;
     background-color: #fff;
-}
+} */
 
-.start-page{
+.header{
     background-color: #f44336;
     padding: 128px 16px;
     text-align: center;
 }
 
-.start-page h2{
+.header h2{
     font-size: 64px;
     color: #fff;
     margin: 16px;
 }
 
-.start-page p{
+.header p{
     font-size: 24px;
     font-family: "Lato", sans-serif;
     color: #fff;
     margin: 24px 0;
 }
 
-.start-page button{
+.header button{
     margin: 16px 0 0;
     padding: 12px 24px;
     font-size: 18px;
@@ -60,7 +84,7 @@
     cursor: pointer;
 }
 
-.start-page button:hover{
+.header button:hover{
     background-color:#666666;
 }
 
@@ -72,12 +96,12 @@
     padding: 64px 0;
 }
 
-main section:nth-child(2n + 3) {
+main section:nth-child(2n + 2) {
     background-color: #f1f1f1;
 }
 
 
-main section:nth-child(2n + 3) .post{
+main section:nth-child(2n + 2) .post{
     flex-direction: row-reverse;
 }
 
@@ -160,8 +184,7 @@ footer p {
 
 footer a{
     font-family: 'Lato', sans-serif;
-    outline: none;
-    /* text-decoration: black; */
+    outline: none;    
     padding: 2px 1px 0;
     cursor: pointer;
     background-color: transparent;
