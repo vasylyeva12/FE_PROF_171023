@@ -48,6 +48,7 @@ nav a{
     text-decoration: none;
     color: black;
     letter-spacing: 4px;
+    border: none;
 }
 
 nav a:hover{
@@ -88,4 +89,68 @@ nav a:hover{
     background-color: #000;
     color: #fff;
     opacity: 0.75;
+}
+
+main{
+    max-width: 1564px;
+    padding: 8px 16px;
+}
+/* SECTION PROJECT */
+
+section h3{
+    padding: 32px 16px;
+    font-size: 24px;
+    font-family: 'Segoe UI';
+    margin: 10px 0;
+    font-weight: 400;
+}
+hr{
+    margin: 32px;
+}
+
+.images__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    gap: 20px;
+}
+.images{
+    background-image: url(./media/summer_house1.jpg);
+    width: 265px;
+    height: 176px;
+    background-size: cover;
+
+    position: relative;
+    
+}
+.images:nth-child(2n){
+    background-image: url(./media/house2.jpg);
+}
+.images:nth-child(3n){
+    background-image: url(./media/house3.jpg);
+}
+.images:nth-child(4n){
+    background-image: url(./media/house4.jpg);
+}
+.images:nth-child(5n){
+    background-image: url(./media/house2.jpg);
+}
+.images:nth-child(6n){
+    background-image: url(./media/summer_house1.jpg);
+}
+.images:nth-child(7n){
+    background-image: url(./media/house4.jpg);
+}
+.images:nth-child(8n){
+    background-image: url(./media/house3.jpg);
+}
+
+.project__title{
+    color: #fff;
+    background-color: #000000;
+    font-size: 15px;
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
