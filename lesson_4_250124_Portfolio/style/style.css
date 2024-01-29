@@ -170,7 +170,6 @@ button .fa .fa-download{
     margin-right: 5px;
 }
 
-
 .my-photos__container{
     display: flex;
     max-width: 980px;
@@ -285,24 +284,17 @@ button .fa .fa-download{
     background-size: 16px 18px;
     background-position: 98% 50%;
  }
- 
- 
 
 footer{
     padding: 64px 0;
     max-width: 980px;
     font-size: 24px;
     margin: 0 auto;
-    /* display: flex;
-    flex-direction: column;     */
-    
+        
 }
 .footer-icon ul{
-    display: flex;
-    
-    gap: 5px;
-    
-    /* font-size: 24px; */
+    display: flex;    
+    gap: 5px;    
     list-style: none;
 }
 
