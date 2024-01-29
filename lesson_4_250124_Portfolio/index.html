@@ -117,6 +117,7 @@
                 <img src="./media/bandmember.jpg" alt="Avatar" class="reputation__img">
                 <p><span>Chris Fox.</span>  CEO at Mighty Schools.</p>
                 <p>John Doe saved us from a web disaster.</p>
+                
                 <img src="./media/avatar_g2.jpg" alt="Avatar" class="reputation__img">
                 <p><span>Chris Fox.</span>   CEO at Mighty Schools.</p>
                 <p>John Doe saved us from a web disaster.</p>
@@ -148,17 +149,19 @@
         <section>
             <h2>Contact Me</h2>
             <hr>
-            <div>
-                <p><i class="fa fa-map-marker"></i> Chicago, US</p>
-                <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
-                <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+            <div class="contacts__container">
+                <p class="contacts"><i class="fa fa-map-marker"></i> Chicago, US</p>
+                <p class="contacts"><i class="fa fa-phone"></i> Phone: +00 151515</p>
+                <p class="contacts"><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
             </div>
+            <br>
+
             <p>Let's get in touch. Send me a message:</p>
             <form action="">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Subject">
-                <input type="text" placeholder="Message">
+                <p><input type="text" placeholder="Name" required name="Name" class="input__img"></p>
+                <p><input type="text" placeholder="Email" required name="Email"></p>
+                <p><input type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input type="text" placeholder="Message" required name="Massage"></p>
                 <button> <i class="fa fa-paper-plane"></i> SEND MESSAGE
                 </button>
             </form>

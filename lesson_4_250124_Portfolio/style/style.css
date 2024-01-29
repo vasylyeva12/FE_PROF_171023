@@ -207,6 +207,10 @@ button .fa .fa-download{
     list-style-type: none;
     background-color: #999;
  }
+ .tariff ul:hover{
+    background-color: #fff;
+    opacity: 1;
+ }
 
  .tariff ul li{
     padding: 24px 16px;
@@ -250,23 +254,55 @@ button .fa .fa-download{
    margin-right: 16px; 
    font-size: 18px;
  }
+
+ section p{
+    margin: 15px 0;
+ }
+
+ .contacts__container{
+    margin: 16px 0;
+ }
+
+ .contacts i{
+    width: 1.28571429em;
+    text-align: center;
+    font-size: 36px;
+    color:#fff;
+    margin-right: 16px;
+ }
+ form input{
+    padding: 16px 8px;
+    display: block;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    overflow:visible;
+ }
+ form .input__img{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 16px 18px;
+    background-position: 98% 50%;
+ }
  
  
 
 footer{
-    display: flex;
-    flex-direction: column;    
-    /* padding: 64px 0; */
+    padding: 64px 0;
+    max-width: 980px;
+    font-size: 24px;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;     */
+    
 }
 .footer-icon ul{
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    gap: 5px;
-    /* margin: 0 auto;     */
     
-    /* padding: 64px 16px; */
-    font-size: 24px;
+    gap: 5px;
+    
+    /* font-size: 24px; */
     list-style: none;
 }
 
@@ -278,6 +314,7 @@ footer p {
     font-family: "Montserrat", sans-serif;;
     font-size: 15px;
     color: #666666;
+    margin: 15px 0;
 }
 
 footer a{
