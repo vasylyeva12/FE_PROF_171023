@@ -1,0 +1,61 @@
+.container-1{
+    background-color: red;
+}
+
+.container-2{
+    background-color: blue;
+}
+
+.container-3{
+    background-color: goldenrod;
+}
+
+@media (max-width:1024px) {
+    .container-1{
+        background-color: royalblue;
+        color: antiquewhite;
+    }
+    
+}
+
+@media (max-width:768px) {
+    .container-1{
+        background-color: greenyellow;
+        color: darkgrey;
+    }
+    
+}
+
+@media (max-width:1024px) {
+    .container-2{
+        background-color: purple;
+        color: antiquewhite;
+    }
+    
+}
+
+
+
+@media (min-width:376px) {
+    .container-2{
+        background-color: yellow;
+        color: black;
+    }   
+    
+}
+
+@media (min-width:768px) {
+    .container-2{
+        background-color: pink;
+        color: black;
+    }   
+    
+}
+
+@media (min-width:768px)  and (max-width:1024px){
+    .container-3{
+        background-color: darkcyan;
+        color: black;
+    }
+    
+}

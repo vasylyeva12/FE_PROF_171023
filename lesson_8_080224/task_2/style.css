@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Questrial&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif ;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar{
+    padding: 12px;
+}
+.navbar .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .content > a {
+    font-size: 48px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.navbar .content .navbar__list{
+    display: flex;    
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.navbar .navbar__list .navbar__item{
+    font-family: 'DM Sans', sans-serif;
+    color: #878787;
+    font-size: 20px;
+}
+
+.navbar .navbar__list .navbar__item-active,
+.navbar .navbar__list .navbar__item:hover{
+   
+    color: #0b0101;
+   
+}
+
+.header .content{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.header .content .header__info {
+    max-width: 690px;
+}
+
+.header .content .header__info span {
+    font-size: 18px;
+}
+.header .content .header__info h1 {
+    font-size: 56px;
+    font-family: 'Questrial', sans-serif;
+    line-height: 1.45;
+    margin: 16px 0;
+}
+
+.header .content .header__info p {
+    max-width: 490px;
+    font-size: 20px;
+}
+
+.header .content .header__info img{
+    display: block;
+    max-width: 476px;
+    width: 100%;
+    min-width: 300px;
+    border-radius: 50px;
+}
+
+

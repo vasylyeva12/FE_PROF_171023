@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.contianer {
+    padding: 20px;
+}
+
+.example {
+    margin: 20px 0;
+}
+
+.example h2 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.example-1 h2::before{
+    content: 'This is';
+    color: blue;
+
+}
+
+.example-1 h2::after{
+    /* content: "  pseudo!";
+    color: orangered; */
+    position: absolute;
+    /* content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: orange; */
+
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("https://i.pinimg.com/236x/2a/f5/3d/2af53d8f1be483dd0e05b7b18142c33c.jpg") ;
+    background-size: cover;
+}
+
+.list{
+    list-style: none;
+    background-color: indianred;
+    padding: 20px;
+    max-width: 360px;
+}
+
+.list__item{
+    padding: 8px 12px;
+    color: #f2f2f2;
+}
+
+.example-1 .list .list__item:first-child{
+    background-color: greenyellow;
+}
+
+.example-1 .list .list__item:last-child{
+    background-color: blueviolet;
+}
+
+.example-2 .list .list__item:nth-child(even){
+    background-color: lightgreen;
+}
+
+.example-2 .list .list__item:nth-child(odd){
+    background-color: lightskyblue;
+}
+
+.example-3 .list .list__item:nth-child(1){
+    background-color: rgb(159, 8, 101);
+}
+
+.example-3 .list .list__item:nth-child(5){
+    background-color: rgb(9, 201, 105);
+}
+
+.example-4 .list .list__item:nth-child(-n+4){
+    background-color: rgb(9, 201, 105);
+}
+
+.example-4 .list .list__item:nth-child(3n){
+    background-color: rgb(9, 201, 105);
+}
+
+.example-5 .list .list__item:nth-child(3n + 1){
+    background-color: rgb(201, 9, 9);
+}
+.example-5 .list .list__item:nth-child(3n + 2){
+    
+    border: 1px solid black;
+}
+
+.example-6 .example__content h1 + p{
+    background-color: rebeccapurple;
+}
+
+.example-7 .example__content h1 ~ p{
+    background-color: rgb(28, 197, 197);
+}
+
+.example-8 input[type]{
+    padding: 6px;
+    background-color: rgb(236, 240, 240);
+    outline: none; /*не будет окрашиваться при нажатии */
+}
+
+.example-8 input[type="text"]{
+    padding: 8px;
+    background-color: rgb(71, 241, 241);
+}
+
+.example-9 a[href^="index"]{
+    color: rgb(17, 185, 81);
+}
+.example-9 a[href^="https"]{
+    color: rgb(211, 23, 155);
+}
+
+.example-9 a[href$="com"]{
+    color: rgb(212, 103, 13);
+}
+
+.example-10 input:focus{
+    outline: 4px dashed red;
+    outline-offset: 4px;
+
+}
+
+.example-10 input:active{
+    border: 2px solid green;
+}

@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    background-color: #f4f5f8;
+}
+ul{
+    list-style: none;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header{
+
+}
+
+.header-top__content{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px 0;
+}
+
+.header-top .map{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.map span{
+    color: #36383f;
+}
+
+.header-top ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-top ul a{
+    color: #6e7284;
+    font-size: 13px;
+}
+
+.header-top ul a:not(a.active):hover {
+    color: #36383F;
+}
+
+
+
+.header-top ul a.activ{
+    color: #f04716;
+}
+
+.contact{
+    display: flex;
+    align-items:center;
+    gap: 20px;
+}
+
+.contact__phone{
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+
+.header-top .contact__phone span{
+    font-size: 15px;
+    color: #36383f;
+}
+
+.header-top .contact a{
+    color: #4788ff;
+}
+
+.header-bottom .logo{
+    display: block;
+}
+
+.header-bottom .logo svg{
+    width:260px ;
+    height: 62px;
+}

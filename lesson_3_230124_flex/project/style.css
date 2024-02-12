@@ -29,26 +29,30 @@ nav{
 
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center; 
+    letter-spacing: 4px;  
+
 
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 999;
+   
 }
 
 nav ul{
     list-style: none;
     display: flex;
 }
-
+.nav__logo {
+    border: none;
+}
 nav a{
     display: block;
     padding: 8px 16px;
     text-decoration: none;
     color: black;
-    letter-spacing: 4px;
-    border: none;
+     
 }
 
 nav a:hover{
@@ -57,6 +61,7 @@ nav a:hover{
 
 .header {
     max-width: 1500px;
+    height: auto;
     margin: 0 auto;
     position: relative;
 }
@@ -91,66 +96,123 @@ nav a:hover{
     opacity: 0.75;
 }
 
-main{
+.container{
     max-width: 1564px;
+    margin: 0 auto;
     padding: 8px 16px;
+    
 }
 /* SECTION PROJECT */
+.post{
+    padding: 32px 0 ;
+}
 
-section h3{
-    padding: 32px 16px;
+.post h2{
+    padding: 16px 0px;
     font-size: 24px;
     font-family: 'Segoe UI';
     margin: 10px 0;
     font-weight: 400;
-}
-hr{
-    margin: 32px;
+    border-bottom: 1px solid #f1f1f1;
 }
 
-.images__container{
+.post p{
+    margin: 15px 0;
+}
+.post__content:not(.contact){
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: center;  
     gap: 20px;
+    margin: 32px 0;   
 }
-.images{
-    background-image: url(./media/summer_house1.jpg);
-    width: 265px;
-    height: 176px;
-    background-size: cover;
-
+.post__content .images{
+    max-width: 360px;
     position: relative;
+}
+
+.post__content .images img{
+    width: 100%;
+    display: block;
     
 }
-.images:nth-child(2n){
-    background-image: url(./media/house2.jpg);
-}
-.images:nth-child(3n){
-    background-image: url(./media/house3.jpg);
-}
-.images:nth-child(4n){
-    background-image: url(./media/house4.jpg);
-}
-.images:nth-child(5n){
-    background-image: url(./media/house2.jpg);
-}
-.images:nth-child(6n){
-    background-image: url(./media/summer_house1.jpg);
-}
-.images:nth-child(7n){
-    background-image: url(./media/house4.jpg);
-}
-.images:nth-child(8n){
-    background-image: url(./media/house3.jpg);
+.post__content .project__title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 8px;
 }
 
-.project__title{
+.about .about__card{
+    margin: 10px 0;
+}
+
+.about .about__card h3{
+    margin: 10px 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about .about__card span{
+    color: #919191;
+    
+}
+
+.about .about__card button{
+border-color: #f1f1f1;
+display: block;
+width: 100%;
+padding: 8px 16px;
+border: none;
+overflow: hidden;
+cursor: pointer;
+}
+
+.about .about__card button:hover{
+background-color: #999999;
+}
+
+/* .form__item{
+    border: 1px solid #ccc;
+} */
+
+.form__item input{
+    padding: 8px;
+    display: block;
+    width: 100%;
+    overflow: visible;
+    margin: 16px 0;
+    border: 1px solid #ccc;
+}
+
+.post__content.contact button{
     color: #fff;
-    background-color: #000000;
-    font-size: 15px;
+    background-color: #000;
+    margin: 16px 0;
     padding: 8px 16px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    border: none;
+    cursor: pointer;
+}
+.post__content.contact button:hover{
+    color: #000;
+    background-color: #999999;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+}
+footer p {
+    font-size: 15px;
+    padding: 16px 0;
+}
+footer a{
+    color: #fff;
+}
+footer a:hover{
+    color: green;
 }
