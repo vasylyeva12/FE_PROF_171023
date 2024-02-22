@@ -286,23 +286,24 @@
 
 //  console.log(username, age);
 
-function getMaxTwo() {
-    let value1 = +document.querySelector(".input-2").value; // 5
-    let value2 = +document.querySelector(".input-3").value; // 4
+// function getMaxTwo() {
+//     let value1 = +document.querySelector(".input-2").value; // 5
+//     let value2 = +document.querySelector(".input-3").value; // 4
 
-    let result = value1 > value2 
-        ? value1 
-        : (value2 === value1) 
-            ? "=" 
-            : value2;
+//     let result = value1 > value2 
+//         ? value1 
+//         : (value2 === value1) 
+//             ? "=" 
+//             : value2;
 
-    if(value1 > value2){
-        result = value1;
-    }else if(value1 < value2){
-        result = value2;
-    }else {
-        result = "=";
-    }
-    document.querySelector(".result-2").innerText = result;
-}
+//     if(value1 > value2){
+//         result = value1;
+//     }else if(value1 < value2){
+//         result = value2;
+//     }else {
+//         result = "=";
+//     }
+//     document.querySelector(".result-2").innerText = result;
+// }
+
 
